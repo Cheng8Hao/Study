@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="@string/test_key"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/show_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:id="@+id/tv11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/key_hint"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv11"
+                android:paddingTop="5dp"
+                android:text="@string/remind_vibrate_text"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv22"
+                android:paddingTop="5dp"
+                android:text="@string/remind_backlight_text"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/key_share"
+                android:layout_width="36dp"
+                android:layout_height="70dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="70dp"
+                android:text="@string/key_share"
+                android:textSize="10sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/key_up"
+                android:layout_width="36dp"
+                android:layout_height="70dp"
+                android:layout_alignParentRight="true"
+                android:text="@string/key_up"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/key_down"
+                android:layout_width="36dp"
+                android:layout_height="70dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="70dp"
+                android:text="@string/key_down"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/key_power"
+                android:layout_width="36dp"
+                android:layout_height="70dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="140dp"
+                android:text="@string/key_power_btn"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+
+            <Button
+                android:id="@+id/key_menu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="@string/key_menu_btn"
+                android:textSize="10sp" /> 
+                
+            <Button
+                android:id="@+id/key_home"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="@string/key_home_btn"
+                android:textSize="10sp" />
+                
+            <Button
+                android:id="@+id/key_back"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/key_back_btn"
+                android:textSize="10sp" />
+                
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="right"
+        android:paddingRight="10dp">
+
+        <Button
+            android:id="@+id/key_camera"
+            android:layout_width="36dp"
+            android:layout_height="85dp"
+            android:text="@string/key_camera_btn"
+            android:textSize="10sp" 
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/key_success_btn"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1.0"
+            android:text="@string/test_success"
+            android:textColor="#00FF00"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/key_fail_btn"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1.0"
+            android:text="@string/test_fail"
+            android:textColor="#FF0000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

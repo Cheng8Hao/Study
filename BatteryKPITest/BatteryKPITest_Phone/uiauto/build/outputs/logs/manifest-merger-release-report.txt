@@ -1,0 +1,81 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/uiauto/src/main/AndroidManifest.xml:2:1-32:12
+	package
+		ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/uiauto/src/main/AndroidManifest.xml:3:5-41
+		INJECTED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/uiauto/src/main/AndroidManifest.xml
+		INJECTED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/uiauto/src/main/AndroidManifest.xml
+	android:sharedUserId
+		ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/uiauto/src/main/AndroidManifest.xml:4:5-46
+	android:versionName
+		INJECTED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/uiauto/src/main/AndroidManifest.xml
+		INJECTED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/uiauto/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/uiauto/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/uiauto/src/main/AndroidManifest.xml
+		INJECTED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/uiauto/src/main/AndroidManifest.xml
+application
+ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/uiauto/src/main/AndroidManifest.xml:6:5-30:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/chenghao/.android/build-cache/1e3c7fcb2a61abfbb69bb4a00e250f7725c53e90/output/AndroidManifest.xml:9:5-20
+	android:label
+		ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/uiauto/src/main/AndroidManifest.xml:9:9-41
+	android:supportsRtl
+		ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/uiauto/src/main/AndroidManifest.xml:11:9-35
+	android:roundIcon
+		ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/uiauto/src/main/AndroidManifest.xml:10:9-54
+	android:allowBackup
+		ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/uiauto/src/main/AndroidManifest.xml:7:9-35
+	android:icon
+		ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/uiauto/src/main/AndroidManifest.xml:8:9-43
+	android:persistent
+		ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/uiauto/src/main/AndroidManifest.xml:13:9-34
+	android:theme
+		ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/uiauto/src/main/AndroidManifest.xml:12:9-40
+activity#com.example.myapplication2.MainActivity
+ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/uiauto/src/main/AndroidManifest.xml:14:9-19:20
+	android:name
+		ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/uiauto/src/main/AndroidManifest.xml:14:19-47
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/uiauto/src/main/AndroidManifest.xml:15:13-18:29
+action#android.intent.action.MAIN
+ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/uiauto/src/main/AndroidManifest.xml:16:17-69
+	android:name
+		ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/uiauto/src/main/AndroidManifest.xml:16:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/uiauto/src/main/AndroidManifest.xml:17:17-77
+	android:name
+		ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/uiauto/src/main/AndroidManifest.xml:17:27-74
+receiver#com.example.myapplication2.ShutdownReceiver
+ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/uiauto/src/main/AndroidManifest.xml:21:9-29:20
+	android:enabled
+		ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/uiauto/src/main/AndroidManifest.xml:23:13-35
+	android:exported
+		ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/uiauto/src/main/AndroidManifest.xml:24:13-36
+	android:name
+		ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/uiauto/src/main/AndroidManifest.xml:22:13-45
+intent-filter#android.intent.action.ACTION_SHUTDOWN
+ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/uiauto/src/main/AndroidManifest.xml:25:13-28:29
+action#android.intent.action.ACTION_SHUTDOWN
+ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/uiauto/src/main/AndroidManifest.xml:27:17-80
+	android:name
+		ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/uiauto/src/main/AndroidManifest.xml:27:25-77
+uses-sdk
+INJECTED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/uiauto/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/chenghao/.android/build-cache/e8a7286e3fbfbe37898bf97e4299a3e99c64e471/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /home/chenghao/.android/build-cache/ab16155ea7f7df8950463e68cfe7d8bf34a09e66/output/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/chenghao/.android/build-cache/61a1dcad9395cf25b458517615cefcff1dabb113/output/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /home/chenghao/.android/build-cache/4df6cb48615c37415c99781cde66461b39e7fee6/output/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/chenghao/.android/build-cache/f9c1e6b41be67e1dd861490287d030bae4e8e7a7/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/chenghao/.android/build-cache/7326b5202c936e3a72a21cae13514d1fcf263e95/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/chenghao/.android/build-cache/aaa720a27208b9438e8a04073bc311c36c398158/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/chenghao/.android/build-cache/b332323871116fe67e65bfb628e58ff3fdfe554f/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/chenghao/.android/build-cache/79b37f2d24b08e7eade93888ea6a282ca9756618/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /home/chenghao/.android/build-cache/0cb98e167bae41b173ad3e9ab5d567970b300204/output/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/chenghao/.android/build-cache/125ae5d123b372fc6ff47fab5c60a798613cef83/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/chenghao/.android/build-cache/1e3c7fcb2a61abfbb69bb4a00e250f7725c53e90/output/AndroidManifest.xml:5:5-7:41
+	android:targetSdkVersion
+		ADDED from [com.android.support.constraint:constraint-layout:1.0.2] /home/chenghao/.android/build-cache/1e3c7fcb2a61abfbb69bb4a00e250f7725c53e90/output/AndroidManifest.xml:7:9-38
+	android:minSdkVersion
+		INJECTED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/uiauto/src/main/AndroidManifest.xml
+		INJECTED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/uiauto/src/main/AndroidManifest.xml

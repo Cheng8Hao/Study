@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/chenghao/AndroidStudioProjects/UiautomatorDemo/autocall/build/intermediates/res/merged/release/mipmap-hdpi/ic_launcher_round.png",
+        "source": "/home/chenghao/AndroidStudioProjects/UiautomatorDemo/autocall/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/chenghao/AndroidStudioProjects/UiautomatorDemo/autocall/build/intermediates/res/merged/release/mipmap-hdpi/ic_launcher.png",
+        "source": "/home/chenghao/AndroidStudioProjects/UiautomatorDemo/autocall/src/main/res/mipmap-hdpi/ic_launcher.png"
+    }
+]

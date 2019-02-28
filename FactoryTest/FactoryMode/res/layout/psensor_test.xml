@@ -1,0 +1,211 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#ff212121"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="@string/test_sensor"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|left"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/gsensorView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/app_name_gsensor"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/reGsensor"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/refresh"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|left"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/app_name_bt"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/reBt"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/refresh"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|left"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/hallSensorView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/app_name_hall_sensor"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/reHallSensor"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/refresh"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|left"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/nfcView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/nfc_test"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/reNFC"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/refresh"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/pSensorView"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:text="@string/app_name_psensor"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/mediaView"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:text="@string/app_name_media"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/fmView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name_fm"
+        android:textSize="18sp"
+        android:visibility="gone" />
+        
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|left"
+        android:orientation="horizontal"> 
+         
+        <TextView
+            android:id="@+id/lsensorView"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:text="@string/lsensor_testing"
+            android:textColor="#FF0000"/>
+        <TextView
+            android:id="@+id/show_lsensor"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:textSize="18sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"/>
+        
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/show_gsensor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="center" />
+
+    <TextView
+        android:id="@+id/gsensor_xyz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_success_btn"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1.0"
+            android:text="@string/test_success"
+            android:textColor="#00FF00"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bt_fail_btn"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1.0"
+            android:text="@string/test_fail"
+            android:textColor="#FF0000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

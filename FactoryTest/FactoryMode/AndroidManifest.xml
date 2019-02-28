@@ -1,0 +1,193 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dyc.factorymode"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="26" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.STATUS_BAR" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"/>
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <user-permission android:name="android.permission.DEVICE_POWER"/>
+    <user-permission android:name="android.permission.INTERACT_ACROSS_USERS" />
+
+    <application
+        android:name=".Root"
+        android:icon="@drawable/ic_launcher"
+        android:theme="@style/MyTitleBar">
+        <activity
+            android:name=".TestMainActivity"
+            android:label="@string/engineer_mode"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ManualTest"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".UsbTest"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".GmsInfotest"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".TouchTestActivity"
+            android:screenOrientation="portrait"
+            android:resizeableActivity="true"></activity>
+        <activity
+            android:name=".DiagonalTestActivity"
+            android:screenOrientation="portrait"
+            android:resizeableActivity="true"></activity>
+        <activity
+            android:name=".SensorTest"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".IMEITest"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".SDCardTest"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.dyc.factorymode.fmradio.FmMainActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.dyc.factorymode.fmradio.FmFavoriteActivity"
+            android:label="@string/station_title"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnchanged|stateHidden|stateAlwaysHidden|stateAlwaysVisible"></activity>
+
+        <service
+            android:name="com.dyc.factorymode.fmradio.FmService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.dyc.factorymode.fmradio.IFmRadioService" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="com.dyc.factorymode.fmradio.FmProvider"
+            android:authorities="com.dyc.factorymode"
+            android:exported="false" >
+        </provider>
+        
+        <activity
+            android:name="com.dyc.factorymode.fmradio.FmRecordActivity"
+            android:label="@string/record_title"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.dyc.factorymode.fmradio.FmEmActivity"
+            android:clearTaskOnLaunch="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.mediatek.fmradio.FmRadioEmActivity" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HeadsetLoopback"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".AudioLoopback"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".RecTest"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".LoudSpeaker"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".TestLCD"
+            android:screenOrientation="portrait"
+            android:resizeableActivity="true"></activity>
+        <activity
+            android:name=".CameraTest"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".AutoTest"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".KeyTestActivity"
+            android:theme="@style/MyTitleBarForKeyTest"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".TestReport"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".CallTest"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".FingerprintTestActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Root"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".Smartpa"
+            android:label="@string/app_name_smart_pa"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".RefAudioLoopback"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".CompassTest"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".GyroscopeTest"
+            android:screenOrientation="portrait"></activity>
+
+        <receiver android:name="BootBroadcastReceiver">
+           <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+				<action android:name="sagereal.intent.WRITE_FLAG" />
+				<action android:name="sagereal.intent.CLEAR_FLAG" />
+            </intent-filter>
+            <intent-filter android:priority="100">
+                <action android:name="android.dyc.action.FACTORY.START" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SECRET_CODE" />
+                <data
+                    android:host="96"
+                    android:scheme="android_secret_code" />
+                <data android:scheme="android_secret_code" android:host="888"/>
+                <data android:scheme="android_secret_code" android:host="0"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

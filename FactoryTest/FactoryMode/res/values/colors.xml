@@ -1,0 +1,16 @@
+<resources>
+    <color name="success">#0000ff</color>
+	<color name="fail">#DC143C</color>
+	<color name="normal">#000000</color>
+	
+	<color name="text_fm_color">#cfd8dc</color>
+	<color name="theme_primarydark_color">#455a64</color>
+	<color name="theme_primary_color">#607d8b</color>
+	<color name="theme_title_color">#deffffff</color>
+	<color name="actionbar_overflow_title_color">#de000000</color>
+    <color name="actionbar_overflow_title_disabled_color">#33000000</color>
+    <color name="white_color">#ffffff</color>
+    <color name="black_color">#000000</color>
+    <color name="colorPrimary">#000000</color>
+    <color name="theme_windowBackground">#607D8B</color>
+</resources>

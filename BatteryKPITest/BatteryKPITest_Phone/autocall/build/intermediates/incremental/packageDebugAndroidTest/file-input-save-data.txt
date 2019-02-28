@@ -1,0 +1,21 @@
+#Internal package file, do not edit.
+#Thu Jan 24 11:24:05 CST 2019
+2.base=/home/chenghao/AndroidStudioProjects/UiautomatorDemo/autocall/build/intermediates/res/resources-debug-androidTest.ap_
+5.file=/home/chenghao/AndroidStudioProjects/UiautomatorDemo/autocall/build/intermediates/transforms/mergeJavaRes/androidTest/debug/jars/2/1f/main.jar/LICENSE-junit.txt
+5.set=JAVA_RESOURCE
+3.base=/home/chenghao/AndroidStudioProjects/UiautomatorDemo/autocall/build/intermediates/transforms/dex/androidTest/debug/folders/1000/1f/main
+2.set=ANDROID_RESOURCE
+4.base=/home/chenghao/AndroidStudioProjects/UiautomatorDemo/autocall/build/intermediates/transforms/mergeJavaRes/androidTest/debug/jars/2/1f/main.jar
+count=6
+0.file=/home/chenghao/AndroidStudioProjects/UiautomatorDemo/autocall/build/intermediates/res/resources-debug-androidTest.ap_/AndroidManifest.xml
+5.base=/home/chenghao/AndroidStudioProjects/UiautomatorDemo/autocall/build/intermediates/transforms/mergeJavaRes/androidTest/debug/jars/2/1f/main.jar
+4.set=JAVA_RESOURCE
+1.file=/home/chenghao/AndroidStudioProjects/UiautomatorDemo/autocall/build/intermediates/transforms/mergeJavaRes/androidTest/debug/jars/2/1f/main.jar/junit/runner/smalllogo.gif
+1.set=JAVA_RESOURCE
+2.file=/home/chenghao/AndroidStudioProjects/UiautomatorDemo/autocall/build/intermediates/res/resources-debug-androidTest.ap_/resources.arsc
+0.base=/home/chenghao/AndroidStudioProjects/UiautomatorDemo/autocall/build/intermediates/res/resources-debug-androidTest.ap_
+3.file=/home/chenghao/AndroidStudioProjects/UiautomatorDemo/autocall/build/intermediates/transforms/dex/androidTest/debug/folders/1000/1f/main/classes.dex
+3.set=DEX
+1.base=/home/chenghao/AndroidStudioProjects/UiautomatorDemo/autocall/build/intermediates/transforms/mergeJavaRes/androidTest/debug/jars/2/1f/main.jar
+4.file=/home/chenghao/AndroidStudioProjects/UiautomatorDemo/autocall/build/intermediates/transforms/mergeJavaRes/androidTest/debug/jars/2/1f/main.jar/junit/runner/logo.gif
+0.set=ANDROID_RESOURCE

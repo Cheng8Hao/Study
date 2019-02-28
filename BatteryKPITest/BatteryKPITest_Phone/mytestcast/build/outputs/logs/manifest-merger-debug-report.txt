@@ -1,0 +1,114 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/AndroidManifest.xml:1:1-28:12
+	package
+		ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/AndroidManifest.xml:4:5-37
+		INJECTED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/AndroidManifest.xml
+		INJECTED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/AndroidManifest.xml
+		INJECTED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/AndroidManifest.xml:2:5-51
+	xmlns:android
+		ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/AndroidManifest.xml:1:11-69
+	android:versionCode
+		INJECTED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/AndroidManifest.xml
+		INJECTED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/AndroidManifest.xml
+uses-permission#android.permission.CALL_PHONE
+ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/AndroidManifest.xml:5:5-85
+	android:name
+		ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/AndroidManifest.xml:5:22-66
+uses-permission#android.permission.ANSWER_PHONE_CALLS
+ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/AndroidManifest.xml:6:5-93
+	android:name
+		ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/AndroidManifest.xml:6:22-74
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/AndroidManifest.xml:7:5-80
+	android:name
+		ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/AndroidManifest.xml:7:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/AndroidManifest.xml:8:5-80
+	android:name
+		ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/AndroidManifest.xml:8:22-77
+uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/AndroidManifest.xml:9:5-84
+	android:name
+		ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/AndroidManifest.xml:9:22-81
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/AndroidManifest.xml:10:5-79
+	android:name
+		ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/AndroidManifest.xml:10:22-76
+uses-permission#android.permission.CHANGE_NETWORK_STATE
+ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/AndroidManifest.xml:11:5-79
+	android:name
+		ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/AndroidManifest.xml:11:22-76
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/AndroidManifest.xml:12:5-79
+	android:name
+		ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/AndroidManifest.xml:12:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/AndroidManifest.xml:13:5-76
+	android:name
+		ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/AndroidManifest.xml:13:22-73
+uses-permission#android.permission.CHANGE_WIFI_MULTICAST_STATE
+ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/AndroidManifest.xml:14:5-86
+	android:name
+		ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/AndroidManifest.xml:14:22-83
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/AndroidManifest.xml:15:5-76
+	android:name
+		ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/AndroidManifest.xml:15:22-73
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/AndroidManifest.xml:16:5-84
+	android:name
+		ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/AndroidManifest.xml:16:22-65
+uses-permission#android.permission.DEVICE_POWER
+ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/AndroidManifest.xml:18:5-106
+	tools:ignore
+		ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/AndroidManifest.xml:18:69-104
+	android:name
+		ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/AndroidManifest.xml:18:22-68
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/AndroidManifest.xml:19:5-79
+	android:name
+		ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/AndroidManifest.xml:19:22-77
+application
+ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/AndroidManifest.xml:21:5-25:19
+MERGED from [com.android.support.test:runner:0.5] /home/chenghao/.android/build-cache/2e9bbbe45d33c57626046a678f8e873d174e36b2/output/AndroidManifest.xml:24:5-20
+MERGED from [com.android.support.test:exposed-instrumentation-api-publish:0.5] /home/chenghao/.android/build-cache/29d592361a23a2ea06ea54e8524eabd28639bc29/output/AndroidManifest.xml:24:5-20
+MERGED from [com.android.support.test.uiautomator:uiautomator-v18:2.1.2] /home/chenghao/.android/build-cache/903048fbf638d019fc23facea38ba1b644cbec62/output/AndroidManifest.xml:22:5-20
+	android:label
+		ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/AndroidManifest.xml:22:9-41
+	android:supportsRtl
+		ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/AndroidManifest.xml:23:9-35
+	android:roundIcon
+		ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/AndroidManifest.xml:22:42-87
+	android:allowBackup
+		ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/AndroidManifest.xml:21:18-44
+	android:icon
+		ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/AndroidManifest.xml:21:45-79
+	android:theme
+		ADDED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/AndroidManifest.xml:23:36-67
+uses-sdk
+INJECTED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/chenghao/.android/build-cache/e8a7286e3fbfbe37898bf97e4299a3e99c64e471/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /home/chenghao/.android/build-cache/ab16155ea7f7df8950463e68cfe7d8bf34a09e66/output/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/chenghao/.android/build-cache/61a1dcad9395cf25b458517615cefcff1dabb113/output/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /home/chenghao/.android/build-cache/4df6cb48615c37415c99781cde66461b39e7fee6/output/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/chenghao/.android/build-cache/f9c1e6b41be67e1dd861490287d030bae4e8e7a7/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/chenghao/.android/build-cache/7326b5202c936e3a72a21cae13514d1fcf263e95/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/chenghao/.android/build-cache/aaa720a27208b9438e8a04073bc311c36c398158/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/chenghao/.android/build-cache/b332323871116fe67e65bfb628e58ff3fdfe554f/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/chenghao/.android/build-cache/79b37f2d24b08e7eade93888ea6a282ca9756618/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /home/chenghao/.android/build-cache/0cb98e167bae41b173ad3e9ab5d567970b300204/output/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/chenghao/.android/build-cache/125ae5d123b372fc6ff47fab5c60a798613cef83/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.test:runner:0.5] /home/chenghao/.android/build-cache/2e9bbbe45d33c57626046a678f8e873d174e36b2/output/AndroidManifest.xml:20:5-22:41
+MERGED from [com.android.support.test:exposed-instrumentation-api-publish:0.5] /home/chenghao/.android/build-cache/29d592361a23a2ea06ea54e8524eabd28639bc29/output/AndroidManifest.xml:20:5-22:41
+MERGED from [com.android.support.test.uiautomator:uiautomator-v18:2.1.2] /home/chenghao/.android/build-cache/903048fbf638d019fc23facea38ba1b644cbec62/output/AndroidManifest.xml:20:5-44
+	android:targetSdkVersion
+		INJECTED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/AndroidManifest.xml
+		INJECTED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/AndroidManifest.xml
+		INJECTED from /home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/AndroidManifest.xml

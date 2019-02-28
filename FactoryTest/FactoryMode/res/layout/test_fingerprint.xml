@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<LinearLayout
+		android:id="@+id/usb_test"
+		android:layout_width="match_parent"
+		android:layout_height="45sp"
+		android:background="#ff212121"
+		android:orientation="horizontal">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_marginLeft="20dp"
+			android:gravity="center"
+			android:text="@string/test_fingerprint"
+			android:textColor="#FFFFFF"
+			android:textSize="20sp"
+			android:textStyle="bold" />
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/usb_test"
+		android:layout_centerHorizontal="true"
+		android:orientation="vertical">
+		<TextView
+		    android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/fingerprint_mesg"
+            android:gravity="center"
+            android:textSize="21sp"/>
+
+		<TextView
+			android:id="@+id/result"
+			android:textSize="20sp"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" />
+
+		<Button
+			android:id="@+id/start_test"
+			android:layout_width="130dp"
+			android:layout_height="60dp"
+			android:gravity="center"
+			android:layout_gravity="center"
+			android:text="@string/tp_autotest_start"
+			android:textSize="20dp"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"
+		android:orientation="horizontal">
+
+		<Button
+			android:id="@+id/fingerprint_success_btn"
+			android:layout_width="0dp"
+			android:layout_height="60dp"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="4dp"
+			android:layout_weight="1.0"
+			android:text="@string/test_success"
+			android:textColor="#00FF00"
+			android:textSize="20dp"
+			android:textStyle="bold" />
+
+		<Button
+			android:id="@+id/fingerprint_fail_btn"
+			android:layout_width="0dp"
+			android:layout_height="60dp"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="4dp"
+			android:layout_weight="1.0"
+			android:text="@string/test_fail"
+			android:textColor="#FF0000"
+			android:textSize="20dp"
+			android:textStyle="bold" />
+
+	</LinearLayout>
+</RelativeLayout>

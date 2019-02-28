@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/test_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/mfailed"
+            android:textColor="#FF0000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_barcode_qr"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="3dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/not_test"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/not_test"
+                android:textColor="#FFFF00"
+                android:textSize="18dp" />
+        </ScrollView>
+
+        <TextView
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF" />
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/test_pass"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/test_pass_report"
+                android:textColor="#00FF00"
+                android:textSize="18dp" />
+
+        </ScrollView>
+
+        <TextView
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            
+            <TextView
+                android:id="@+id/test_fail_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/test_fail_report"
+                android:textColor="#FF0000"
+                android:textSize="18dp"
+		        android:layout_marginBottom="15dp"/>
+		        
+            <ListView
+                android:id="@+id/test_fail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+		        android:divider="#00000000"
+                android:dividerHeight="18dp">
+            </ListView>
+            
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

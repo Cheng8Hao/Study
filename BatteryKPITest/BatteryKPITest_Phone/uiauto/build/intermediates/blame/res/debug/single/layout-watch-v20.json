@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/chenghao/AndroidStudioProjects/UiautomatorDemo/uiauto/build/intermediates/res/merged/debug/layout-watch-v20/abc_alert_dialog_button_bar_material.xml",
+        "source": "/home/chenghao/.android/build-cache/e8a7286e3fbfbe37898bf97e4299a3e99c64e471/output/res/layout-watch-v20/abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "/home/chenghao/AndroidStudioProjects/UiautomatorDemo/uiauto/build/intermediates/res/merged/debug/layout-watch-v20/abc_alert_dialog_title_material.xml",
+        "source": "/home/chenghao/.android/build-cache/e8a7286e3fbfbe37898bf97e4299a3e99c64e471/output/res/layout-watch-v20/abc_alert_dialog_title_material.xml"
+    }
+]

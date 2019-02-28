@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher.png",
+        "source": "/home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher_round.png",
+        "source": "/home/chenghao/AndroidStudioProjects/UiautomatorDemo/mytestcast/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
+    }
+]
