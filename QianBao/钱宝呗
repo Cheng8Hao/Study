@@ -1,0 +1,91 @@
+钱宝呗
+项目描述：钱宝呗是一款依托移动互联网线上信用借款APP产品，主要解决年轻人日常小额消费借款需求。整个APP主要分为五个模块，借款、认证、还款 、我的(个人中心)。
+应用技术：
+1) 项目整体框架是 RadioGroup 和 Fragment 搭建； 
+2) 使用 OkHttp 联网请求请求数据
+3) 使用 Glide 加载图片; 
+4) 利用 Gson解析 JSON 数据；
+5) 使用 ViewPager 顶部轮播图效果
+6) 集成友盟完成第三方登录、分享，微信支付宝支付;
+技术要点：
+1.底部导航栏采用Radiogroup + Fragment设计。采用模板设计模式,使用一个父类BaseActivity对所有的Activity共性内容（每个页面的初始化页面initView和初始化数据initData等等）进行处理，简化每一个activity的工作，提高团队开发效率。
+2.ListView优化：复用convertView,利用ViewHolder减少findViewById的次数。
+3.使用Android-percent-support实现钱宝呗的屏幕适配。
+4.数据持久化。Fragment 先从本地获取缓存的数据显示出来，然后再请求网络，得到后再更新数据。
+5.通过AsyncTask异步访问网络，获取json数据，并通过gson解析获取到的json数据。
+6.ViewPager事件的分发，使用事件分发机制，处理ViewPager和轮播的冲突，使用SystemClock的sleep方法与Handler消息机制实现轮播图自动切换。
+所遇到的问题：
+加载服务器图片过多的时候遇到OOM问题，访问网络等待时间过长没响应的ANR问题。
+解决方案：
+1.对于ANR问题，不应该将耗时的操作放到主线程执行，可能会导致主线程的阻塞，从而导致程序的ANR，
+异步开启子线程进行耗时的操作，通过Handler+Message在子线程发送消息到主线程进行更新UI。
+2.对于加载图片过多时导致的OOM内存溢出问题，可以通过引入ImageLoader开源框架解决，ImageLoader里的线程使用了线程池，从而避免了过多的线程频繁的创建和销毁，如果每次总是new一个线程去执行这是非常不可取的，好一点的可用AsyncTask类，其实其内部的实现也是用到了线程池。在网络获取图片时，先是将其保存到sd卡，然后加载到内存，这么做的好处是加载到内存的时候做个压缩处理，以减少图片所占的内存。
+
+
+???
+BugHD实现项目bug的跟踪定位
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+我的职责：
+1、根据项目经理的安排，完成自己负责模块的编码和测试工作
+2、对程序业务逻辑进行优化，使其达到更高的性能。
+3、不断迭代开发，解决上线后遇到的bug并修复
+4、优化app的体验性
+
+技术要点：
+采用模板设计模式，用BaseFragment将每个页面的初始化页面和初始化数据的代码都写到 initView和initData 两个父类的抽象方法中，提高团队开发效率。
+
+使用模板设计模式抽取基类代码
+(1) 由于很多的Activity都使用了相同的菜单栏和底部的导航栏，使用模板方式将顶部菜单栏和底部导航栏与服务器交互的方法都封装在一个BaseActivity中，其他Activity只需要继承它就能实现这些方法，大大减少了重复代码的出现。
+(2) 因为项目中大量用到与服务器刷新的界面，为了提高用户的体验，在与服务器交互的子线程未完成之前，先显示加载进度条，当成功获取服务器数据以后再显示数据。
+(3) 从服务器下载的图片缓存到本地，在listview的适配器中服务convertview，建立一个静态类ViewHolder，在其类内声明各个View对象，以减少这些View的创建次数大大优化了listview性能。
+(4) 查询商品时通过ListView的分批加载数据，优化了用户的体验。
+(5) 使用 ViewPager 顶部轮播图效果  
+
+专业技能　　　　　　　　　　　　　　　　　　　　　　　　　　　        
+1、 熟练掌握Android下的四大组件以及它们之间的数据传递、五种常用布局并能灵活的运用
+2、 熟练掌握Android常用的系统控件，具备自定义控件的开发能力，能够利用系统控件及自定义控件完成常见UI界面的绘制，手机屏幕的适配
+3、 熟练掌握Android的5种主要数据存储方式以及MySQL、SQLServier、SQLite数据库的CRUD操作
+4、 熟悉Android中xml文件的3种主要解析方式(DOM、SAX、PULL)，能熟练的运用pull解析方式完成xml的解析
+5、 熟悉利用JSON方式进行数据交换，能利用Fastjson完成JSON数据的解析
+6、 熟悉android中常用动画和组合动画的使用
+7、 熟悉android中的图片处理方式从而防止加载图片时发生内存溢出
+8、 熟悉异步加载、分批加载、分页显示、SD卡缓存等优化方式
+9、 熟悉常用的设计模式，并能将设计模式运用到实际的开发之中，进行框架的开发与优化
+10、掌握Socket、HttpUrlConnection、HttpClient等常用的网络编程技术和多线程技术
+11、熟悉AIDL技术,能通过AIDL技术实现进程间的数据通信
+12、熟悉JNI技术，使用NDK实现java与底层C/C++语言的数据互调，实现底层数据的扩展功能。
+13、会使用SVN、GIT等版本控制工具以及Log的控制
+14、熟悉Linux常用指令以及Linux下C语言编程和WebService
+15、利用IBM Rose进行UML图的设计
+16、熟悉百度地图Api的使用
+17、深刻理解http协议，能通过http-client获取网站数据独立完成完整客户端开发
+18、熟练的利用convertView、ViewHolder和软引用(SoftReference)来实现listview的优化与图片的缓存
+19、深刻理解Handler、Message的消息传送机制、垃圾回收机制和AsyncTask异步处理的原理
+
+个人技能人技能     
+Ø  有良好的Java语言基础，良好的编程风格，熟悉面向对象编程思想。
+Ø  熟练使用属性动画，补间动画，帧动画，能根据具体情况，灵活运用。
+Ø  能够有效避免APP运行过程中遇到的内存泄漏和内存溢出问题。
+Ø  熟练掌握线程之间通过Handler传递消息的机制原理，Message,Looper，MessageQueue,Handler之间的关系，能够利用接口回调，广播，观察者模式等对数据的改变做出即时处理。
+Ø  熟练掌握自定义控件，自定义组合控件中View所经过的测量，布局，绘制的流程，以及Touch事件分发机制，可以灵活应用事件分发机制实现不可滑动的ViewPager，ViewPager相互之间以及与ListView之间嵌套时的事件拦截，以及侧滑菜单的处理。
+Ø  熟悉Android手机屏幕适配及屏幕适配的原则，提高应用的兼容性（解决不同尺寸手机显示图片大小问题）
+Ø 了解JNI开发流程NDK工具的使用,Java与本地C动态库之间的相互调用。
+Ø  熟悉Android的数据存储方式（File,SharedPrefrence,Sqlite,ContentProvider,Net），JSON数据格式的解析(节点解析,Bean解析，泛型解析)，远程服务的调用，
+Ø  掌握APP应用开发框架结构的基本搭建，抽取activity,fragment,adapter，holder等公用代码，能够将常见的单例模式，代理模式，抽象工厂模式，观察者模式等设计模式灵活应用在APP开发中。
+Ø 熟悉使用sharesdk实现一键分享、三方登录功能
+
+个人技能
+Ø  有良好的Java语言基础，良好的编程风格，熟悉面向对象编程思想。
+Ø  熟练Mysql 、 sqlite数据库，对数据库事物有一定的了解。
+Ø  熟悉Http，TCP/IP协议，对消息推送有一定的认识。
+Ø  熟练android 常用控件，四大组件，intent的应用。
+Ø  熟练android UI设计，对属性动画 补间动画，帧动画有一定的了解。
+Ø  熟悉android handler消息机制。
+Ø  了解ListView优化方式
+Ø  熟悉Android的数据存储方式（File,SharedPrefrence,Sqlite,ContentProvider,Net），JSON数据格式的解析。
+Ø  熟悉使用svn、git版本控制工具。
+Ø  熟悉android OOM/ANR 异常处理。
+Ø 了解一些linux常用命令。
+Ø 了解android常用的开源框架Xutils、SlidingMenu、SmartImageView、ImageLoader等。

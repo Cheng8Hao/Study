@@ -1,0 +1,95 @@
+Activity分析：
+BaseActivity--抽象类
+    两个抽象方法，需要子类去实现
+        protected abstract int getContentView();
+        protected abstract void initViews();
+    运行时权限的申请
+    判断如果没有登录就跳转到登录界面
+    跳转到某个Activity
+    隐藏fragment
+    显示fragment
+    得到StatusBar高度
+    onBackPressed
+
+BaseMainActivity extends BaseActivity  ---抽象类,该类只被MainActivity继承!
+    
+    四个fragment的初始化，将四个实例放进stack<>中，
+    获取当前显示的fragment的下标
+    刷新底部的4个fragment状态
+    控制显示或隐藏fragment
+    onBackPressed
+
+
+MainActivity extends BaseMainActivity
+    会执行父类BaseActivity的oncreate（）
+    实现initViews 其中重点类：mApi = new Api(handler,this);//传入了handler实例
+    initview（）中会获取轮播图,新闻公告,借款额度,客服电话
+        getBanner();
+        getNoticeList();
+        getLimitMoney();
+        getHelpPhone();
+        
+LaunchActivity extends BaseActivity
+    实现了getContentView()和initViews()//播放一个动画跳转到-->MainActivity
+        其中：imageview的缩放动画--animate(final Context context)
+            
+    
+MainApplication extends Application
+全局配置的类
+catchexception--抓异常并自动重启
+SophixManager--热修复则往往是从修复bug的角度出发，强调的是在不需要二次安装应用的前提下修复已知的bug。
+
+
+
+遇到的新问题：
+Q: AndroidStudio ctrl+F可以查找到某个文件，怎么找到该文件在AndroidStudio文件目录中的路径？
+A: 选中此文件，点击Nagivate->Select in... 或者使用快捷键Alt+F1
+   让主窗口显示类的内容，然后在Navigation栏，点击select in，在出来的菜单中选中project view，再选project，左边目录栏就调到类文件所在的目录了。
+
+Q: Environment.getExternalStorageDirectory().getPath()得到的路径是什么？
+A: /storage/emulated/0/,居然不是sdcard的路径!
+
+Q: 当前类/方法被引用位置
+A: Ctrl+G
+
+Q: 查看类的继承结构   
+A: F4 或者打开hierarchy
+
+Q: 查看类结构 
+A: Ctrl+F3 或者打开structure
+
+Q: 找到一个操作的快捷键
+A: ctrl + shift + a
+
+Q: 重定向到实现该接口的类
+A: ctrl+T 或者 ctrl+click 或者 F4
+
+Q: 全局查找字符
+A:Ctrl+H
+ 
+Alt+左右方向键：可以切换到上一个阅读代码的地方，或是下一个阅读代码的地方。
+Ctrl+Shift+H：查看方法或参数或类调用的地方有哪些。
+Ctrl+F： 查找当前界面代码中要指定查找的代码 
+
+Ctrl+Shift+R:查找某一个类
+
+代码折叠/展开的快捷键，默认是：
+Ctrl+Shift+Numpad_Divede(小键盘的/号)
+Ctrl+Numpad_Multiply(小键盘的*号)
+笔记本没小键盘，于是改成：
+Ctrl+Shift+-
+Ctrl+Shift+= 
+
+https://blog.csdn.net/qq_30617755/article/details/50781003
+
+遇到的新框架：
+ButterKnife
+RxPermissions
+AndroidUtilCode     https://github.com/Blankj/AndroidUtilCode
+okgo
+
+遇到的新方法：
+imageview的动画    animate(final Context context)
+
+
+  
