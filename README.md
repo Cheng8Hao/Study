@@ -1,2 +1,1 @@
-# Study
-for daily note 
+sarui company project
